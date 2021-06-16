@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('police/Raleway-VariableFont_wght.ttf');
+}
+
+#bloc_page
+{
+width : 1440px;
+margin :auto;
+font-family: 'Raleway', sans-serif;
+font-size :10px;
+}
+
+h1
+{
+    font-family:'Raleway',sans-serif;
+    font-weight:bold;
+    font-size:13px;
+}
+
+.Hebergement
+{
+    background-color :#F2F2F2;
+}
+
+#Cannebiere
+{
+ width : 248px;
+ height: 199px;
+ border-radius: 5px;
+ background: url('images/hebergements/4_small/Cannebiere.jpg') no repeat;
+}
