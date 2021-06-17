@@ -5,28 +5,159 @@
 
 #bloc_page
 {
-width : 1440px;
+width : 100%;
 margin :auto;
 font-family: 'Raleway', sans-serif;
-font-size :10px;
+font-size:0.73vw;
 }
 
 h1
 {
     font-family:'Raleway',sans-serif;
     font-weight:bold;
-    font-size:13px;
+    font-size:0.9vw;
 }
 
+h2{
+    font-size:0.8vw;
+}
+
+
+section
+{
+    display:flex;
+    justify-content: space-between;
+}
 .Hebergement
 {
     background-color :#F2F2F2;
+    width:62vw;
+    height:50vw;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-radius:1%;
+}
+.Hebergement h1
+{
+    padding-left:3%;
 }
 
-#Cannebiere
+
+#Organisation_Vignettes
 {
- width : 248px;
- height: 199px;
- border-radius: 5px;
- background: url('images/hebergements/4_small/Cannebiere.jpg') no repeat;
+    width:100%;
+    height:70%;
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    align-content:space-between;
+    padding-bottom:4%;
 }
+.Vignette
+{
+    width:28%;
+    height:43%;
+    border-radius:10%;
+    background-color:white;
+    position:relative
+}
+
+.Vignette img
+{
+    width:94%;
+    height:94%;
+    padding:3%;
+    position:absolute;
+    border-radius:10%;
+}
+
+.Description_Vignette
+{
+    position:absolute;
+    bottom:0;
+    height:35%;
+    width:100%;
+    background-color:white;
+    border-radius:0 0 10% 10%;
+    font-size:0.75vw;
+}
+
+
+.Vignette_Horizontale
+{
+    width:80%;
+    height:30%;
+    border-radius:10%;
+    background-color:white;
+    position:relative;
+}
+
+.Vignette_Horizontale img
+{
+    width:45%;
+    height:92%;
+    padding:3%;
+    position:absolute;
+    border-radius:10%;
+}
+
+.Description_Vignette_Horizontale
+{
+    position:absolute;
+    Right:0;
+    width:55%;
+    height:100%;
+    background-color:white;
+    border-radius: 0 10% 10% 0;
+    font-size:0.75vw;
+}
+
+
+.Populaires
+{
+    width:31vw;
+    height:50vw;
+    background-color:#F2F2F2;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border-radius:1%;
+    
+}
+
+#Organisation_Vignettes_Horizontales
+{
+    width:100%;
+    height:80%;
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content : space-around;
+    align-items:center;
+}
+
+.Populaires h1
+{
+    text-align:left;
+    padding-left:10%;
+}
+
+
+
+
+
+.Etoile_Pleine
+{
+    font-weight:bold;
+    color:#0065FC;
+}
+
+.Etoile_Vide
+{
+    font-weight:bold;
+    color:#F2F2F2;
+}
+
