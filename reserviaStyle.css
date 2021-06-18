@@ -1,3 +1,8 @@
+html
+{
+    font-size:100%;
+}
+
 @font-face {
     font-family: 'Raleway';
     src: url('police/Raleway-VariableFont_wght.ttf');
@@ -8,18 +13,55 @@
 width : 100%;
 margin :auto;
 font-family: 'Raleway', sans-serif;
-font-size:0.73vw;
+font-size:0.60rem;
 }
 
+.filtres
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    align-items:center;
+}
+#Boutons_Filtres
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+}
+.Bordure_filtre
+{
+  padding: 10px;
+  margin: 10px;
+  border: 3px solid #F2F2F2;
+  height:12px;
+  width:75px;
+  display:flex;
+  flex-direction:row-reverse;
+  align-items:center;
+  border-radius:25%/50%;
+}
+.Rond_Icone
+{
+    padding: 10px;
+    margin: 10px;
+    border: 9px solid #DEEBFF;
+    height:14x;
+    width:auto;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    position:relative;
+
+}
 h1
 {
     font-family:'Raleway',sans-serif;
     font-weight:bold;
-    font-size:0.9vw;
+    font-size:0.8rem;
 }
 
 h2{
-    font-size:0.8vw;
+    font-size:0.65rem;
 }
 
 
@@ -82,7 +124,13 @@ section
     width:100%;
     background-color:white;
     border-radius:0 0 10% 10%;
-    font-size:0.75vw;
+    font-size:0.65rem;
+}
+
+.Description_Vignette h2,p
+{
+    line-height:50%;
+    padding-left:3%;
 }
 
 
@@ -112,9 +160,20 @@ section
     height:100%;
     background-color:white;
     border-radius: 0 10% 10% 0;
-    font-size:0.75vw;
+    font-size:0.65rem;
 }
 
+.Description_Vignette_Horizontale h2,p
+{
+    line-height:auto;
+    padding-left:3%;
+}
+
+.Description_Vignette_Horizontale p:last-child
+{
+    position: absolute;
+    bottom:0;
+}
 
 .Populaires
 {
@@ -145,9 +204,150 @@ section
     padding-left:10%;
 }
 
+#Activites
+{
+ height:32vw;
+ width:100vw;
+ position:absolute;
+}
 
+#Disposition_Activites
+{
+ height:27vw;
+ width:100vw;
+ display:flex;
+ flex-direction:row;
+ justify-content:space-between;
+ position:relative;
+}
 
+#Colonne1, #Colonne2, #Colonne3, #Colonne4
+{
+    height:27vw;
+    width:17vw;
+    display:inline-block;
+}
 
+#Colonne2, #Colonne4
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+}
+
+.Vignette_Activite100
+{
+    background-color: white;
+    height:27vW;
+    width:17vw;
+    border-radius: 10%;
+    position:relative;
+}
+.Vignette_Activite100 img
+{
+    height:94%;
+    width:94%;
+    padding:3%;
+    border-radius:10%;
+    position:absolute;
+}
+.Vignette_Activite100 h2
+{
+    background-color: white;
+    bottom:0;
+    height:10%;
+    width:100%;
+    position:absolute;
+    border-radius:0 0 10% 10%;
+    font-size:0.65rem;
+
+}
+
+.Vignette_Activite66
+{
+    height:18vw;
+    width:17vw;
+    padding:3%;
+    position:relative;
+    border-radius:10%;
+}
+
+.Vignette_Activite66 img
+{
+    height:94%;
+    width:94%;
+    padding:3%;
+    border-radius:10%;
+    position:absolute;
+}
+
+.Vignette_Activite66 h2
+{
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    height:10%;
+    width:100%;
+    border-radius:0 0 10% 10%;
+    font-size:0.65rem;
+}
+
+.Vignette_Activite33
+{
+    height:8vw;
+    width:17vw;
+    padding:3%;
+    position:relative;
+    border-radius:10%;
+} 
+
+.Vignette_Activite33 img
+{
+    height:94%;
+    width:94%;
+    padding:3%;
+    border-radius:10%;
+    position:absolute;
+}
+
+.Vignette_Activite33 h2
+{
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    height:10%;
+    width:100%;
+    border-radius:0 0 10% 10%;
+    font-size:0.65rem;
+}
+
+.Vignette_Activite50
+{
+    height:12vw;
+    width:17vw;
+    padding:3%;
+    position:relative;
+    border-radius:10%;
+}
+.Vignette_Activite50 img
+{
+    height:94%;
+    width:94%;
+    padding:3%;
+    border-radius:10%;
+    position:absolute;
+}
+
+.Vignette_Activite50 h2
+{
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    height:10%;
+    width:100%;
+    border-radius:0 0 10% 10%;
+    font-size:0.65rem;
+}
 
 .Etoile_Pleine
 {
