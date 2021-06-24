@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('police/Raleway-VariableFont_wght.ttf');
+}
+
+#bloc_page
+{
+    width:100%;
+    margin:auto;
+    font-family: 'Raleway', sans-serif;
+    font-size:12px;
+}
+
+header
+{ 
+    width:100%;
+    height:auto;
+}
+
+.recherche
+{
+    width:100%;
+    height:auto;
+}
+
+ul{
+
+    list-style-type:none;
+    margin-bottom:7vw;
+    display:flex;
+    justify-content: left;
+    position:relative;
+    left:-8vw;
+    top:4vw;
+    width:100vw;
+
+}
+ 
+
+
+li
+{
+    padding: 0 16vw 3vw 16vw;
+    border-top:none;
+    margin-left:0;
+    margin-right:0;
+    border-bottom:2px solid #F2F2F2;
+    text-align:center;
+    position:relative;
+    left:-6vw;
+}
+li a:link
+{
+    padding: 0 16vw 3vw 16vw;
+    border-top:none;
+    margin-left:0;
+    margin-right:0;
+    text-align:center;
+    position:relative;
+    left:-6vw;
+}
+li a:hover
+{
+    padding: 0 16vw 3vw 16vw;
+    border-top:none;
+    margin-left:0;
+    margin-right:0;
+    border-bottom:2px solid #0065FC;
+    text-align:center;
+    position:relative;
+    left:-6vw;
+}
+
+#Boutons_Filtres
+{
+    flex-wrap:wrap;
+    align-items:top;
+}
+
+.Un_Bouton_Filtre
+{
+ margin:10px;
+ height:30px;
+
+}
+#filtres
+{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:top;
+    width:100%;
+    height:auto;
+}
+
+section
+{
+    display:flex;
+    flex-direction:column-reverse;
+}
+
+.Populaires
+{
+    width:100%;
+}
+
+.Vignette_Horizontale
+{
+    width:80vw;
+    height:auto;
+    border-radius:10%;
+    position:relative;
+}

@@ -1,80 +1,186 @@
-html
-{
-    font-size:100%;
-}
 
 @font-face {
     font-family: 'Raleway';
     src: url('police/Raleway-VariableFont_wght.ttf');
 }
 
+
+
 #bloc_page
 {
-width : 100%;
-margin :auto;
+width:900px;
+margin:auto;
 font-family: 'Raleway', sans-serif;
-font-size:0.60rem;
+font-size:11px;
 }
 
-.filtres
+
+#logoReservia img
+{
+    padding-top:20px;
+    padding-left:30px;
+    height:40px;
+    width:auto;
+    object-fit: contain;
+}
+
+ul{
+    top:2.8vw;
+    right:4vw;
+    display:flex;
+    list-style-type: none;
+    margin-right:70px;
+    position:absolute;
+}
+
+
+li{
+    width:91px;
+    text-align:center;
+}
+
+li a
+{
+   padding-top:30px;  
+}
+a:hover 
+{
+    color:#0065FC;
+}
+
+nav a:hover
+{   
+    border-top:1px solid #0065FC;
+}
+
+#inscription
+{
+    position:absolute;
+    top:4vw;
+    right:4vw;
+    font-weight:bold;
+    color:#0065FC;
+}
+.recherche h1,.recherche p
+{
+    padding-left:30px;
+}
+a
+{
+    font-style:normal;
+    color:black;
+    text-decoration: none;
+}
+form
 {
     display:flex;
+    align-items:center;
+    margin: 10px 0 20px 0;
+}
+
+#localisation
+{
+text-align: center;
+margin-left:30px;
+border: none;
+background-color:#F2F2F2;
+height:25px;
+width:30px;
+border-radius: 10px 0 0 10px;
+}
+#recherche
+{
+    border:1px solid #F2F2F2;
+    background-color:white;
+    height:21px;
+    text-align:left;
+    width:130px;
+    border-left:none;
+}
+#recherche::placeholder
+{
+    color:black;
+    padding-left:5px;
+}
+#bouton
+{
+    background-color:#0065FC;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border:none;
+    height:25px;
+}
+
+#filtres
+{
+    padding-left:20px;
+    display:flex;
     flex-direction:row;
-    justify-content:left;
+    justify-content: left;
     align-items:center;
 }
 #Boutons_Filtres
 {
-    display:flex;
-    flex-direction:row;
-    justify-content:left;
+ display:flex;
+ flex-direction:row;
+ justify-content: left;
+ align-items:center;
+}
+
+.Un_Bouton_Filtre
+{
+    margin: 10px 15px 10px 15px;
 }
 .Bordure_filtre
 {
-  padding: 10px;
-  margin: 10px;
-  border: 3px solid #F2F2F2;
-  height:12px;
-  width:75px;
-  display:flex;
-  flex-direction:row-reverse;
-  align-items:center;
-  border-radius:25%/50%;
+    border: 2px solid #F2F2F2;
+    border-radius:25px;
+    padding: 7px 15px 7px 40px;
+    position:relative;
+    top:-14px;
 }
+
 .Rond_Icone
 {
-    padding: 10px;
-    margin: 10px;
-    border: 9px solid #DEEBFF;
-    height:14x;
-    width:auto;
+    border: 7px solid #DEEBFF;
     background-color: #DEEBFF;
     border-radius: 50%;
-    position:relative;
-
+    position: relative;
+    width:15px;
+    height:15px;
+    left:1px;
+    top:15px;
+    text-align:center;
+    
 }
+
 h1
 {
     font-family:'Raleway',sans-serif;
     font-weight:bold;
-    font-size:0.8rem;
+    font-size:14px;
 }
 
 h2{
-    font-size:0.65rem;
+    font-size:12px;
 }
 
-
+.info
+{
+    padding-left:20px;
+}
 section
 {
     display:flex;
-    justify-content: space-between;
+    flex-direction:row;
+    justify-content:space-around;
+    height:390px;
+    background-color:white;
 }
 .Hebergement
 {
     background-color :#F2F2F2;
-    width:62vw;
-    height:50vw;
+    width:549px;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -82,14 +188,18 @@ section
 }
 .Hebergement h1
 {
-    padding-left:3%;
+    padding-left:20px;
 }
 
+#afficher
+{
+    padding-left: 20px;
+}
 
 #Organisation_Vignettes
 {
-    width:100%;
-    height:70%;
+    width:549px;
+    height:270px;
     position:relative;
     display:flex;
     flex-direction:row;
@@ -100,70 +210,70 @@ section
 }
 .Vignette
 {
-    width:28%;
-    height:43%;
+    width:154px;
+    height:125px;
     border-radius:10%;
-    background-color:white;
-    position:relative
+    position:relative;
 }
 
 .Vignette img
 {
-    width:94%;
-    height:94%;
-    padding:3%;
-    position:absolute;
-    border-radius:10%;
+    width:148px;
+    height:71px;
+    object-fit:cover;
+    border:3px solid white;
+    border-radius: 10px 10px 0 0;
 }
 
 .Description_Vignette
 {
-    position:absolute;
-    bottom:0;
-    height:35%;
-    width:100%;
+    height:49px;
+    width:154px;
     background-color:white;
     border-radius:0 0 10% 10%;
-    font-size:0.65rem;
+    font-size:11px;
+    position:absolute;
+    bottom:0;
 }
 
-.Description_Vignette h2,p
+.Description_Vignette h2,.Description_Vignette p
 {
-    line-height:50%;
+    line-height:40%;
     padding-left:3%;
 }
 
 
 .Vignette_Horizontale
 {
-    width:80%;
-    height:30%;
+    width:215px;
+    height:90px;
     border-radius:10%;
-    background-color:white;
     position:relative;
 }
 
 .Vignette_Horizontale img
 {
-    width:45%;
-    height:92%;
-    padding:3%;
+    width:81px;
+    height:84px;
+    object-fit:cover;
+    border: 3px solid white;
+    border-right:none;
     position:absolute;
-    border-radius:10%;
+    border-radius:10% 0 0 10%;
 }
 
 .Description_Vignette_Horizontale
 {
     position:absolute;
     Right:0;
-    width:55%;
-    height:100%;
+    width:136px;
+    height:90px;
     background-color:white;
     border-radius: 0 10% 10% 0;
-    font-size:0.65rem;
+    font-size:11px;
 }
 
-.Description_Vignette_Horizontale h2,p
+.Description_Vignette_Horizontale h2,.Description_Vignette_Horizontale p
 {
     line-height:auto;
     padding-left:3%;
@@ -177,8 +287,7 @@ section
 
 .Populaires
 {
-    width:31vw;
-    height:50vw;
+    width:261px;
     background-color:#F2F2F2;
     display:flex;
     flex-direction:column;
@@ -189,12 +298,12 @@ section
 
 #Organisation_Vignettes_Horizontales
 {
-    width:100%;
-    height:80%;
+    width:261px;
+    height:317px;
     position:relative;
-    display: flex;
-    flex-direction: column;
-    justify-content : space-around;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
     align-items:center;
 }
 
@@ -204,80 +313,81 @@ section
     padding-left:10%;
 }
 
-#Activites
+#Activites h1
 {
- height:32vw;
- width:100vw;
- position:absolute;
+   padding-left: 30px;
 }
 
 #Disposition_Activites
 {
- height:27vw;
- width:100vw;
+
  display:flex;
- flex-direction:row;
- justify-content:space-between;
- position:relative;
+ justify-content:space-around;
+ align-items:top;
+ margin-top:30px;
+ margin-bottom:30px;
 }
-
-#Colonne1, #Colonne2, #Colonne3, #Colonne4
+.Colonne
 {
-    height:27vw;
-    width:17vw;
-    display:inline-block;
-}
-
-#Colonne2, #Colonne4
-{
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+margin:0;
+padding:0;
 }
 
 .Vignette_Activite100
 {
     background-color: white;
-    height:27vW;
-    width:17vw;
-    border-radius: 10%;
+    height:282px;
+    width:190px;
+    border-radius: 15px;
     position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    box-shadow:0 4px 8px 0 rgba(242, 242, 242, 0.8), 0 6px 20px 0 rgba(242, 242, 242, 0.7);
 }
 .Vignette_Activite100 img
 {
-    height:94%;
-    width:94%;
-    padding:3%;
-    border-radius:10%;
+    height:246px;
+    width:190px;
+    object-fit:cover;
+    overflow:hidden;
+    border-radius:15px 15px 0 0;
     position:absolute;
 }
 .Vignette_Activite100 h2
 {
     background-color: white;
     bottom:0;
-    height:10%;
-    width:100%;
+    height:26px;
+    width:190px;
     position:absolute;
-    border-radius:0 0 10% 10%;
-    font-size:0.65rem;
+    border-radius:0 0 15px 15px;
+    font-size:12px;
 
 }
 
 .Vignette_Activite66
 {
-    height:18vw;
-    width:17vw;
-    padding:3%;
+    height:143px;
+    width:190px;
     position:relative;
-    border-radius:10%;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    box-shadow:0 4px 8px 0 rgba(242, 242, 242, 0.8), 0 6px 20px 0 rgba(242, 242, 242, 0.7);
+
 }
 
 .Vignette_Activite66 img
 {
-    height:94%;
-    width:94%;
-    padding:3%;
-    border-radius:10%;
+    height:117px;
+    width:190px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
     position:absolute;
 }
 
@@ -286,27 +396,31 @@ section
     background-color: white;
     position: absolute;
     bottom:0;
-    height:10%;
-    width:100%;
-    border-radius:0 0 10% 10%;
-    font-size:0.65rem;
+    height:26px;
+    min-width:190px;
+    border-radius:0 0 15px 15px;
+    font-size:12px;
 }
 
 .Vignette_Activite33
 {
-    height:8vw;
-    width:17vw;
-    padding:3%;
+    height:104px;
+    width:190px;
     position:relative;
-    border-radius:10%;
+    border-radius:15px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    box-shadow:0 4px 8px 0 rgba(242, 242, 242, 0.8), 0 6px 20px 0 rgba(242, 242, 242, 0.7);
 } 
 
 .Vignette_Activite33 img
 {
-    height:94%;
-    width:94%;
+    height:68px;
+    width:190px;
+    object-fit:cover;
     padding:3%;
-    border-radius:10%;
+    border-radius:15px 15px 0 0;
     position:absolute;
 }
 
@@ -315,38 +429,72 @@ section
     background-color: white;
     position: absolute;
     bottom:0;
-    height:10%;
-    width:100%;
-    border-radius:0 0 10% 10%;
-    font-size:0.65rem;
+    height:26px;
+    width:190px;
+    border-radius:0 0 15px 15px;
+    font-size:12px;
 }
 
-.Vignette_Activite50
+.Vignette_Activite45
 {
-    height:12vw;
-    width:17vw;
-    padding:3%;
+    height:120px;
+    width:190px;
     position:relative;
-    border-radius:10%;
+    border-radius:15px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    box-shadow:0 4px 8px 0 rgba(242, 242, 242, 0.8), 0 6px 20px 0 rgba(242, 242, 242, 0.7);
 }
-.Vignette_Activite50 img
+.Vignette_Activite45 img
 {
-    height:94%;
-    width:94%;
-    padding:3%;
-    border-radius:10%;
+    height:94px;
+    width:190px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
     position:absolute;
 }
 
-.Vignette_Activite50 h2
+.Vignette_Activite45 h2
 {
     background-color: white;
     position: absolute;
     bottom:0;
-    height:10%;
-    width:100%;
-    border-radius:0 0 10% 10%;
-    font-size:0.65rem;
+    height:26px;
+    width:190px;
+    border-radius:0 0 15px 15px;
+    font-size:12px;
+}
+
+.Vignette_Activite55
+{
+    height:130px;
+    width:190px;
+    position:relative;
+    border-radius:15px;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    box-shadow:0 4px 8px 0 rgba(242, 242, 242, 0.8), 0 6px 20px 0 rgba(242, 242, 242, 0.7);
+}
+.Vignette_Activite55 img
+{
+    height:104px;
+    width:190px;
+    object-fit:cover;
+    border-radius:15px 15px 0 0;
+    position:absolute;
+}
+
+.Vignette_Activite55 h2
+{
+    background-color: white;
+    position: absolute;
+    bottom:0;
+    height:26px;
+    width:190px;
+    border-radius:0 0 15px 15px;
+    font-size:12px;
 }
 
 .Etoile_Pleine
@@ -361,3 +509,36 @@ section
     color:#F2F2F2;
 }
 
+footer
+{
+
+    height:136px;
+    width:900px;
+    background-color:#F2F2F2;
+    display:flex;
+   
+}
+
+.Menu_Footer
+{  
+    width:285px;
+    height:136px;
+    margin-top:15px;
+}
+
+.Menu_Footer h2,p
+{
+    line-height:auto;
+    text-align:justify;
+    padding-left:10px;
+}
+
+.Menu_Footer h2
+{
+    padding-bottom:7px;
+}
+
+.Menu_Footer p
+{
+    padding-bottom:4px;
+}
