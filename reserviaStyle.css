@@ -14,6 +14,14 @@ font-family: 'Raleway', sans-serif;
 font-size:11px;
 }
 
+.titre_section
+{
+    font-size:12px;
+}
+h1
+{
+    font-size:12px;
+}
 
 #logoReservia img
 {
@@ -82,9 +90,10 @@ form
 {
 text-align: center;
 margin-left:30px;
+padding: 6px 0 0 0;
 border: none;
 background-color:#F2F2F2;
-height:25px;
+height:18px;
 width:30px;
 border-radius: 10px 0 0 10px;
 }
@@ -110,7 +119,10 @@ border-radius: 10px 0 0 10px;
     border:none;
     height:25px;
 }
-
+#Loupe
+{
+    display:none;
+}
 #filtres
 {
     padding-left:20px;
@@ -154,7 +166,7 @@ border-radius: 10px 0 0 10px;
     
 }
 
-h1
+.titre_section
 {
     font-family:'Raleway',sans-serif;
     font-weight:bold;
@@ -168,7 +180,24 @@ h2{
 .info
 {
     padding-left:20px;
+    display:flex;
+    align-items:center;
 }
+#Rond_Info
+{
+    border:2px solid #F2F2F2;
+    padding:3px 0 0 0;
+    margin:0 5px 0 0;
+    color:#0065FC;
+    font-weight:bold;
+    font-size:7px;
+    border-radius:50%;
+    height:11px;
+    width:11px;
+    text-align:center;
+    
+}
+
 section
 {
     display:flex;
@@ -186,7 +215,7 @@ section
     justify-content:center;
     border-radius:1%;
 }
-.Hebergement h1
+.Hebergement .titre_section
 {
     padding-left:20px;
 }
@@ -293,8 +322,16 @@ section
     flex-direction:column;
     justify-content:center;
     border-radius:1%;
-    
 }
+#titre_populaires
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 25px 0 0;
+}
+
+
 
 #Organisation_Vignettes_Horizontales
 {
@@ -307,13 +344,13 @@ section
     align-items:center;
 }
 
-.Populaires h1
+.Populaires .titre_section
 {
     text-align:left;
     padding-left:10%;
 }
 
-#Activites h1
+#Activites .titre_section
 {
    padding-left: 30px;
 }
@@ -341,7 +378,7 @@ padding:0;
     background-color: white;
     height:282px;
     width:190px;
-    border-radius: 15px;
+    border-radius:15px;
     position:relative;
     display:flex;
     flex-direction: column;
@@ -353,7 +390,6 @@ padding:0;
     height:246px;
     width:190px;
     object-fit:cover;
-    overflow:hidden;
     border-radius:15px 15px 0 0;
     position:absolute;
 }
@@ -365,7 +401,7 @@ padding:0;
     width:190px;
     position:absolute;
     border-radius:0 0 15px 15px;
-    font-size:12px;
+    font-size:11px;
 
 }
 
@@ -399,7 +435,7 @@ padding:0;
     height:26px;
     min-width:190px;
     border-radius:0 0 15px 15px;
-    font-size:12px;
+    font-size:11px;
 }
 
 .Vignette_Activite33
@@ -432,7 +468,7 @@ padding:0;
     height:26px;
     width:190px;
     border-radius:0 0 15px 15px;
-    font-size:12px;
+    font-size:11px;
 }
 
 .Vignette_Activite45
@@ -463,7 +499,7 @@ padding:0;
     height:26px;
     width:190px;
     border-radius:0 0 15px 15px;
-    font-size:12px;
+    font-size:11px;
 }
 
 .Vignette_Activite55
@@ -494,7 +530,7 @@ padding:0;
     height:26px;
     width:190px;
     border-radius:0 0 15px 15px;
-    font-size:12px;
+    font-size:11px;
 }
 
 .Etoile_Pleine

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
+        <meta charset="utf-8"/>
         <title>Reservia</title>
-        <meta charset = "utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="reserviaStyle.css"/>
         <script src="https://kit.fontawesome.com/4cf7c2f3d5.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" media="screen and (max-width: 480px)" href="resolution_mobile.css" />
+        <link rel="stylesheet" href="resolution_mobile.css" />
+        <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css"/>
     </head>
     <body>
         <div id="bloc_page">
@@ -27,8 +28,8 @@
                     <p>En plein centre ville ou en pleine nature</p>
                     <div id="bouton_de_recherche">
                         <form method="post" action ="traitement.php">
-                            <div id="localisation"><i class="fas fa-location-dot" style="font-size:12px;color:black;"></i></div><input type="text" name="recherche" id="recherche" placeholder= "Marseille, France"/>
-                            <input type="submit" value="Rechercher" id="bouton"/>
+                            <div id="localisation"><i class="fa fa-map-marker" style="font-size:12px;color:black;"></i></div><input type="text" name="recherche" id="recherche" placeholder= "Marseille, France"/>
+                            <button type="submit" id="bouton"><span id="Rechercher">Rechercher</span><span id="Loupe">︁<i class="fa fa-search"></i></span></button>
                         </form>
                     </div>
                 </div>
@@ -41,10 +42,10 @@
                             <div class="Un_Bouton_Filtre"><div class="Rond_Icone"><i class="fas fa-dog" style="font-size:12px;color:#0065FC;"></i></div><div class="Bordure_filtre"><a href="">Animaux autorisés</a></div></div>
                         </div>
                 </div>
-                <div class="info"><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
+                <div class="info"><div id="Rond_Info"><i class="fa fa-info"></i></div><p>Plus de 500 logements sont disponibles dans cette ville</p></div>
                 <section>
                     <div class="Hebergement">
-                        <h1><div id="ancre_hebergement">Hebergements à Marseille</div></h1>
+                        <div id="ancre_hebergement"><div class="titre_section">Hebergements à Marseille</div></div>
                         <div id="Organisation_Vignettes">
                             <article class="Vignette">
                                 <img src="images/hebergements/4_small/Cannebiere.jpg" alt="Auberge de la Cannebière"/>
@@ -98,7 +99,7 @@
                         <p id="afficher">Afficher plus</p>
                     </div>
                     <div class="Populaires">
-                        <h1>Les plus populaires</h1>
+                        <div id="titre_populaires"><div class="titre_section">Les plus populaires</div><i class="fa fa-line-chart"></i></div>
                         <div id="Organisation_Vignettes_Horizontales">
                             <article class="Vignette_Horizontale">
                                 <img src='images/hebergements/4_small/Soleil.jpg' alt="Hôtel Le soleil du matin"/>
@@ -128,7 +129,7 @@
                     </div>
                 </section>
                 <div id="Activites">
-                    <h1><div id="ancre_activites">Activités à Marseille</div></h1>
+                    <div id="ancre_activites"><div class="titre_section">Activités à Marseille</div></div>
                     <div id="Disposition_Activites">
                         <div>
                             <div class="Vignette_Activite100">
