@@ -279,3 +279,95 @@
         margin-left:15px;
     }
 }
+
+@media screen and (max-width:900px) and (min-width:480px)
+{
+    section
+    {
+        flex-direction: column;
+    }
+    #accomodations
+    {
+        width:100%;
+        margin:1.5vw 0 1.5vw 0;
+    }
+    #popular
+    {
+        width:100%;
+        height: 30vw;
+        margin:1.5vw 0 1.5vw 0;
+    }
+    #Organisation_popular_boxes
+    {
+        flex-direction: row;
+    }
+
+    .popular_box
+    {
+        width:30%;
+        height:70%;
+        background-color: white;
+        border-radius: 1vw 1vw 1vw 1vw;
+        position:relative;
+    }
+
+    .popular_box img
+    {
+        width:95%;
+        height:50%;
+        position: absolute;
+        top:0.35vw;
+        left:0.4vw;
+        object-fit: cover;
+        border-radius: 1vw 1vw 0 0;
+    }
+
+    .popular_box_description
+    {
+        height:46%;
+        width:100%;
+        text-align:left;
+        line-height:50%;
+        position: absolute;
+        bottom: 0;
+    }
+    .popular_box_description h2, .popular_box_description p
+    {
+        padding: 0 0 0 1vw;
+        line-height: 150%;
+    }
+
+    #activities
+    {
+        margin: 2vw 0 20vw 0;
+    }
+    #organisation_activities
+    {
+        flex-direction:row;
+        flex-wrap:wrap;
+        height: 20vw;
+    }
+
+    .column
+    {
+        flex-direction:row;
+        width:auto;
+    }
+
+    #vieux_port, #calanques, #pomegues, #frioul, #dame, #longchamp
+    {
+        height:15vw;
+        width:30vw;
+        margin: 0 0.5vw 0 0.2vw;
+    }
+
+    #vieux_port img, #calanques img, #pomegues img, #frioul img, #dame img, #longchamp img
+    {
+        height: 85%;
+    }
+
+    #vieux_port h2, #calanques h2, #pomegues h2, #frioul h2, #dame h2, #longchamp h2
+    {
+        height:15%;
+    }
+}

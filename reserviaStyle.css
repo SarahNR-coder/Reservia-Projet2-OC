@@ -245,7 +245,7 @@ section
 #accomodations
 {
     background-color :#F2F2F2;
-    height:70vh;
+    height:40vw;
     width:62%;
     border-radius:3%;
     display:flex;
@@ -319,7 +319,7 @@ section
 #popular
 {
     width:33%;
-    height:70vh;
+    height:40vw;
     background-color:#F2F2F2;
     border-radius:3%;
     display:flex;
@@ -401,7 +401,7 @@ section
     align-items:top;
     margin:3vw 0 3vw 0;
     width:100%;
-    height:60vh;
+    height:35vw;
 }
 .column
 {
