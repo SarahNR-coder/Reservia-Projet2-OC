@@ -23,7 +23,7 @@
         display: contents;
     }
 
-    #first_line
+    .first_line
     {
         display: flex;
         justify-content: space-between;
@@ -37,7 +37,7 @@
         font-weight:bold;
         text-decoration: none;
     }
-    #menu
+    .menu
     {
         width:100%;
         text-align:center;
@@ -66,12 +66,12 @@
         border-bottom: 2px solid #0065FC;
     }
 
-    #magnifying_glass
+    .magnifying_glass
     {
         display: contents;
     }
 
-    #searching
+    .searching
     {
         display: none;
     }
@@ -81,7 +81,7 @@
         width:100%;
         justify-content: center;
     }
-    #location
+    .location
     {
         height:50px;
         width:50px;
@@ -120,20 +120,20 @@
     {
         flex-direction: column-reverse;
     }
-    #accomodations
+    .accomodations
     {
         width:100%;
         height:400vw;
         background-color:white;
     }
 
-    #accomodations_title
+    .accomodations h2
     {
         margin:0;
         padding:30px 0 0 25px;
         height:60px;
     }
-    #organisation_accomodation_boxes
+    .organisation_accomodation_boxes
     {
         display:flex;
         flex-direction:column;
@@ -168,25 +168,25 @@
         padding:0 0 0 10px;
     }
     
-    .box_description h2
+    .box_description h3
     {
         margin: 20px 0 0 0;
     }
 
-    #show_more 
+    .show_more 
     {
         padding:0 0 40px 20px;
         height:60px;
         margin:0;
     }
 
-    #popular
+    .popular
     {
         width:100%;
         height:150vw;
     }
 
-    #popular_intro
+    .popular_intro
     {
         padding: 0 20px 10px 20px;
     }
@@ -215,12 +215,12 @@
         width:60%;
     }
 
-    .popular_box_description h2
+    .popular_box_description h3
     {
         padding-top:10px;
     }
 
-    .popular_box_description h2, .popular_box_description p 
+    .popular_box_description h3, .popular_box_description p 
     {
         padding-left:25px;
     }
@@ -230,7 +230,7 @@
         padding-bottom: 10px;
     }
 
-    #organisation_activities
+    .organisation_activities
     {
         display:flex;
         flex-direction:column;
@@ -249,19 +249,19 @@
         margin:0;
         padding:0;
     }
-    #vieux_port, #pomegues, #frioul, #calanques, #dame, #longchamp
+    .box_activities1, #pomegues, #frioul, #dame, #longchamp
     {
         width:90%;
         height:50vw;
         margin:15px 0 15px 0;
         box-shadow:0 4px 8px 0 rgba(173, 172, 172, 0.15), 0 6px 20px 0 rgba(180, 179, 179, 0.15);
     }
-    #vieux_port img, #pomegues img, #frioul img, #calanques img, #dame img, #longchamp img 
+    .box_activities1 img, #pomegues img, #frioul img, #dame img, #longchamp img 
     {
         width:100%;
         height:85%;
     }
-    #vieux_port h2, #pomegues h2, #frioul h2, #calanques h2, #dame h2, #longchamp h2
+    .box_activities1 h3, #pomegues h3, #frioul h3, #dame h3, #longchamp h3
     {
         width:100%;
         height:15%;
@@ -286,18 +286,18 @@
     {
         flex-direction: column;
     }
-    #accomodations
+    .accomodations
     {
         width:100%;
         margin:1.5vw 0 1.5vw 0;
     }
-    #popular
+    .popular
     {
         width:100%;
         height: 30vw;
         margin:1.5vw 0 1.5vw 0;
     }
-    #Organisation_popular_boxes
+    .organisation_popular_boxes
     {
         flex-direction: row;
     }
@@ -331,17 +331,17 @@
         position: absolute;
         bottom: 0;
     }
-    .popular_box_description h2, .popular_box_description p
+    .popular_box_description h3, .popular_box_description p
     {
         padding: 0 0 0 1vw;
         line-height: 150%;
     }
 
-    #activities
+    .activities
     {
         margin: 2vw 0 20vw 0;
     }
-    #organisation_activities
+    .organisation_activities
     {
         flex-direction:row;
         flex-wrap:wrap;
@@ -354,19 +354,19 @@
         width:auto;
     }
 
-    #vieux_port, #calanques, #pomegues, #frioul, #dame, #longchamp
+    .box_activities1, #pomegues, #frioul, #dame, #longchamp
     {
         height:15vw;
         width:30vw;
         margin: 0 0.5vw 0 0.2vw;
     }
 
-    #vieux_port img, #calanques img, #pomegues img, #frioul img, #dame img, #longchamp img
+    .box_activities1 img, #pomegues img, #frioul img, #dame img, #longchamp img
     {
         height: 85%;
     }
 
-    #vieux_port h2, #calanques h2, #pomegues h2, #frioul h2, #dame h2, #longchamp h2
+    .box_activities1 h3, #pomegues h3, #frioul h3, #dame h3, #longchamp h3
     {
         height:15%;
     }
