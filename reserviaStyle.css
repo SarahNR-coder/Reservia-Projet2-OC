@@ -261,7 +261,6 @@ section
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: space-around;
-    align-items: space-around;
 }
 
 .accomodation_box
@@ -391,7 +390,6 @@ section
 {
     display:flex;
     justify-content:space-around;
-    align-items:top;
     margin:3vw 0 3vw 0;
     width:100%;
     height:35vw;
@@ -589,7 +587,6 @@ footer
 
 .menu_footer h3,p
 {
-    line-height:auto;
     text-align:justify;
     padding:0 0 0 1vw;
 }
