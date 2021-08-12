@@ -1,373 +1,336 @@
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  #logoReservia {
+    position: static;
+    width: 100px;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+  }
 
-@media screen and (max-width:480px)
-{
-    body
-    {
-        font-size:14px;
-    }
-    #logoReserviaMobile
-    {
-        width:30%;
-        float:left;
-        padding:0 0 0 0;
-        margin:0 0 0 0;
-    }
-    
-    .computer_screen
-    {   
-        display:none;    
-    }  
-    
-    .mobile
-    {
-        display: contents;
-    }
+  ul {
+    width: 100%;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .first_line
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items:center;
-        margin:0 3px 20px 3px;
-    }
+  li:last-child {
+    order: -1;
+    width: 150px;
+    padding: 0 20px 20px 0;
+  }
+  li:first-child {
+    order: -1;
+    width: 100px;
+    padding: 0 0 20px 20px;
+  }
+  li a {
+    width: 48vw;
+    padding: 0 0 25px 0;
+    border-bottom: solid 2px #f2f2f2;
+  }
+  li a:hover {
+    border-top: none;
+    border-bottom: solid 2px #0065fc;
+  }
+  li:last-child a {
+    padding: 0;
+    border-bottom: none;
+  }
+  li:last-child a:hover {
+    border-bottom: none;
+  }
+  .register a {
+    color: #0065fc;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-    .register a
-    {
-        color:#0065FC;
-        font-weight:bold;
-        text-decoration: none;
-    }
-    .menu
-    {
-        width:100%;
-        text-align:center;
-    }
+  .magnifying_glass {
+    display: contents;
+  }
 
-    td
-    {
-        width:50%; 
-    }
-   
-    td a 
-    {
-        color: black;
-        text-decoration: none;
-        display: block;
-        height:100%;
-        width:100%;
-        padding: 0 0 20px 0;
-        border-bottom: 2px solid #f2f2f2;
-    }
-    
-    td a:hover
-    {
-        color:#0065FC;
-        text-decoration:none;
-        border-bottom: 2px solid #0065FC;
-    }
+  .searching {
+    display: none;
+  }
 
-    .magnifying_glass
-    {
-        display: contents;
-    }
+  form {
+    width: 100%;
+    justify-content: center;
+  }
+  .location {
+    height: 50px;
+    width: 50px;
+  }
+  #entry_box {
+    height: 50px;
+    width: 230px;
+  }
+  ::placeholder {
+    font-size: 1.3em;
+  }
+  #pushbutton {
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+  }
 
-    .searching
-    {
-        display: none;
-    }
-    
-    form 
-    {
-        width:100%;
-        justify-content: center;
-    }
-    .location
-    {
-        height:50px;
-        width:50px;
-    }
-    #entry_box
-    {
-        height:50px;
-        width:230px;
-    }
-    ::placeholder
-    {
-        font-size:1.3em;
-    }
-    #pushbutton
-    {
-        height:50px;
-        width:50px;
-        border-radius:30%;
-    }
+  .filter_button {
+    margin: 10px 10px 10px 10px;
+  }
+  .filter_button span {
+    line-height: 2.7em;
+    width: 2.8em;
+  }
+  .filter_button p {
+    margin: 12px 12px 12px 40px;
+    font-size: 1.2em;
+  }
+  section {
+    flex-direction: column-reverse;
+  }
+  .accomodations {
+    width: 100%;
+    height: 400vw;
+    background-color: white;
+  }
 
-    .filter_button 
-    {
-        margin:10px 10px 10px 10px;
-    }
-    .filter_button span 
-    {
-        line-height:2.7em;
-        width:2.8em;
-    }
-    .filter_button p 
-    {
-        margin: 12px 12px 12px 40px;
-        font-size:1.2em;
-    }
-    section
-    {
-        flex-direction: column-reverse;
-    }
-    .accomodations
-    {
-        width:100%;
-        height:400vw;
-        background-color:white;
-    }
+  .accomodations h2 {
+    margin: 0;
+    padding: 30px 0 0 25px;
+    height: 60px;
+  }
+  .organisation_accomodation_boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    height: 90%;
+    width: 100%;
+  }
 
-    .accomodations h2
-    {
-        margin:0;
-        padding:30px 0 0 25px;
-        height:60px;
-    }
-    .organisation_accomodation_boxes
-    {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content: space-around;
-        flex-wrap:nowrap;
-        height:90%;
-        width:100%;
-    }
+  .accomodation_box {
+    width: 90%;
+    height: 16%;
+    margin: 0 0 30px 0;
+    box-shadow: 0 4px 8px 0 rgba(173, 172, 172, 0.15),
+      0 6px 20px 0 rgba(180, 179, 179, 0.15);
+    border-radius: 20px;
+  }
 
-    .accomodation_box
-    {
-        width:90%;
-        height:16%;
-        margin: 0 0 30px 0;
-        box-shadow:0 4px 8px 0 rgba(173, 172, 172, 0.15), 0 6px 20px 0 rgba(180, 179, 179, 0.15);
-        border-radius:20px;
-    }
+  .accomodation_box img {
+    border-radius: 20px 20px 0 0;
+    height: 60%;
+    border: 7px solid white;
+    border-bottom: none;
+  }
 
-    .accomodation_box img
-    {
-        border-radius:20px 20px 0 0;
-        height:60%;
-        border: 7px solid white;
-        border-bottom: none;
-    }
+  .box_description {
+    height: 40%;
+    width: 100%;
+    padding: 0 0 0 10px;
+  }
 
-    .box_description
-    {
-        height:40%;
-        width:100%;
-        padding:0 0 0 10px;
-    }
-    
-    .box_description h3
-    {
-        margin: 20px 0 0 0;
-    }
+  .box_description h3 {
+    margin: 20px 0 0 0;
+  }
 
-    .show_more 
-    {
-        padding:0 0 40px 20px;
-        height:60px;
-        margin:0;
-    }
+  .show_more {
+    padding: 0 0 40px 20px;
+    height: 60px;
+    margin: 0;
+  }
 
-    .popular
-    {
-        width:100%;
-        height:150vw;
-    }
+  .popular {
+    width: 100%;
+    height: 150vw;
+  }
 
-    .popular_intro
-    {
-        padding: 0 20px 10px 20px;
-    }
+  .popular_intro {
+    padding: 0 20px 10px 20px;
+  }
 
+  .popular_box {
+    width: 92%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(107, 106, 106, 0.2),
+      0 6px 20px 0 rgba(116, 115, 115, 0.1);
+  }
 
-    .popular_box
-    {
-        width:92%;
-        border-radius:15px;
-        box-shadow:0 4px 8px 0 rgba(107, 106, 106, 0.2), 0 6px 20px 0 rgba(116, 115, 115, 0.1);
-    }
+  .popular_box img {
+    width: 40%;
+    height: 91%;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 15px 0 0 15px;
+    left: 8px;
+    top: 7px;
+  }
 
-    .popular_box img
-    {
-        width:40%;
-        height:91%;
-        object-fit:cover;
-        position:absolute;
-        border-radius:15px 0 0 15px;
-        left:8px;
-        top:7px;
-    }
+  .popular_box_description {
+    width: 60%;
+  }
 
-    .popular_box_description
-    {
-        width:60%;
-    }
+  .popular_box_description h3 {
+    padding-top: 10px;
+  }
 
-    .popular_box_description h3
-    {
-        padding-top:10px;
-    }
+  .popular_box_description h3,
+  .popular_box_description p {
+    padding-left: 25px;
+  }
 
-    .popular_box_description h3, .popular_box_description p 
-    {
-        padding-left:25px;
-    }
+  .popular_box_description p:last-child {
+    padding-bottom: 10px;
+  }
 
-    .popular_box_description p:last-child
-    {
-        padding-bottom: 10px;
-    }
+  .organisation_activities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 340vw;
+  }
 
-    .organisation_activities
-    {
-        display:flex;
-        flex-direction:column;
-        justify-content:space-around;
-        width:100%;
-        height:340vw;
-    }
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .box_activities1,
+  #pomegues,
+  #frioul,
+  #dame,
+  #longchamp {
+    width: 90%;
+    height: 50vw;
+    margin: 15px 0 15px 0;
+    box-shadow: 0 4px 8px 0 rgba(173, 172, 172, 0.15),
+      0 6px 20px 0 rgba(180, 179, 179, 0.15);
+  }
+  .box_activities1 img,
+  #pomegues img,
+  #frioul img,
+  #dame img,
+  #longchamp img {
+    width: 100%;
+    height: 85%;
+  }
+  .box_activities1 h3,
+  #pomegues h3,
+  #frioul h3,
+  #dame h3,
+  #longchamp h3 {
+    width: 100%;
+    height: 15%;
+  }
 
-    .column
-    {
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin:0;
-        padding:0;
-    }
-    .box_activities1, #pomegues, #frioul, #dame, #longchamp
-    {
-        width:90%;
-        height:50vw;
-        margin:15px 0 15px 0;
-        box-shadow:0 4px 8px 0 rgba(173, 172, 172, 0.15), 0 6px 20px 0 rgba(180, 179, 179, 0.15);
-    }
-    .box_activities1 img, #pomegues img, #frioul img, #dame img, #longchamp img 
-    {
-        width:100%;
-        height:85%;
-    }
-    .box_activities1 h3, #pomegues h3, #frioul h3, #dame h3, #longchamp h3
-    {
-        width:100%;
-        height:15%;
-    }
-
-    footer 
-    {
-        flex-direction:column;
-        width:100%;
-        height:auto;
-    }
-    .menu_footer
-    {
-        width:100%;
-        margin-left:15px;
-    }
+  footer {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .menu_footer {
+    width: 100%;
+    margin-left: 15px;
+  }
 }
 
-@media screen and (max-width:900px) and (min-width:480px)
-{
-    section
-    {
-        flex-direction: column;
-    }
-    .accomodations
-    {
-        width:100%;
-        margin:1.5vw 0 1.5vw 0;
-    }
-    .popular
-    {
-        width:100%;
-        height: 30vw;
-        margin:1.5vw 0 1.5vw 0;
-    }
-    .organisation_popular_boxes
-    {
-        flex-direction: row;
-    }
+@media screen and (max-width: 900px) and (min-width: 480px) {
+  section {
+    flex-direction: column;
+  }
+  .accomodations {
+    width: 100%;
+    margin: 1.5vw 0 1.5vw 0;
+  }
+  .popular {
+    width: 100%;
+    height: 30vw;
+    margin: 1.5vw 0 1.5vw 0;
+  }
+  .organisation_popular_boxes {
+    flex-direction: row;
+  }
 
-    .popular_box
-    {
-        width:30%;
-        height:70%;
-        background-color: white;
-        border-radius: 1vw 1vw 1vw 1vw;
-        position:relative;
-    }
+  .popular_box {
+    width: 30%;
+    height: 70%;
+    background-color: white;
+    border-radius: 1vw 1vw 1vw 1vw;
+    position: relative;
+  }
 
-    .popular_box img
-    {
-        width:95%;
-        height:50%;
-        position: absolute;
-        top:0.35vw;
-        left:0.4vw;
-        object-fit: cover;
-        border-radius: 1vw 1vw 0 0;
-    }
+  .popular_box img {
+    width: 95%;
+    height: 50%;
+    position: absolute;
+    top: 0.35vw;
+    left: 0.4vw;
+    object-fit: cover;
+    border-radius: 1vw 1vw 0 0;
+  }
 
-    .popular_box_description
-    {
-        height:46%;
-        width:100%;
-        text-align:left;
-        line-height:50%;
-        position: absolute;
-        bottom: 0;
-    }
-    .popular_box_description h3, .popular_box_description p
-    {
-        padding: 0 0 0 1vw;
-        line-height: 150%;
-    }
+  .popular_box_description {
+    height: 46%;
+    width: 100%;
+    text-align: left;
+    line-height: 50%;
+    position: absolute;
+    bottom: 0;
+  }
+  .popular_box_description h3,
+  .popular_box_description p {
+    padding: 0 0 0 1vw;
+    line-height: 150%;
+  }
 
-    .activities
-    {
-        margin: 2vw 0 20vw 0;
-    }
-    .organisation_activities
-    {
-        flex-direction:row;
-        flex-wrap:wrap;
-        height: 20vw;
-    }
+  .activities {
+    margin: 2vw 0 20vw 0;
+  }
+  .organisation_activities {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 20vw;
+  }
 
-    .column
-    {
-        flex-direction:row;
-        width:auto;
-    }
+  .column {
+    flex-direction: row;
+    width: auto;
+  }
 
-    .box_activities1, #pomegues, #frioul, #dame, #longchamp
-    {
-        height:15vw;
-        width:30vw;
-        margin: 0 0.5vw 0 0.2vw;
-    }
+  .box_activities1,
+  #pomegues,
+  #frioul,
+  #dame,
+  #longchamp {
+    height: 15vw;
+    width: 30vw;
+    margin: 0 0.5vw 0 0.2vw;
+  }
 
-    .box_activities1 img, #pomegues img, #frioul img, #dame img, #longchamp img
-    {
-        height: 85%;
-    }
+  .box_activities1 img,
+  #pomegues img,
+  #frioul img,
+  #dame img,
+  #longchamp img {
+    height: 85%;
+  }
 
-    .box_activities1 h3, #pomegues h3, #frioul h3, #dame h3, #longchamp h3
-    {
-        height:15%;
-    }
+  .box_activities1 h3,
+  #pomegues h3,
+  #frioul h3,
+  #dame h3,
+  #longchamp h3 {
+    height: 15%;
+  }
 }
