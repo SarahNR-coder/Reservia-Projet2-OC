@@ -1,6 +1,6 @@
 RESERVIA
 2nd projet de la formation en ligne Développeur Web de Openclassroom.
-_____________________________________________________________________
+----------------------------------------------------------------------
 
 
 Projet réalisé seule à distance et portant sur l'intégration d'un site web responsive, avec le HTML et le CSS, à partir de maquettes desktop, tablette et mobile.
